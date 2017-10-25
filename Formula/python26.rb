@@ -6,6 +6,11 @@ class Python26 < Formula
 
   head "https://hg.python.org/cpython", :using => :hg, :branch => '2.6'
 
+  bottle do
+    root_url "https://github.com/dahlia/homebrew-deadsnakes/releases/download/2017-10-25"
+    sha256 "dbd387b1ee5c3508af489b895094c0a49493e1f3613a2dfd266a73e8aee3564d" => :sierra
+  end
+
   # Please don't add a wide/ucs4 option as it won't be accepted.
   # More details in: https://github.com/Homebrew/homebrew/pull/32368
   option :universal

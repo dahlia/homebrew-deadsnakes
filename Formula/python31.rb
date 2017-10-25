@@ -6,6 +6,11 @@ class Python31 < Formula
 
   head "https://hg.python.org/cpython", :using => :hg, :branch => '3.1'
 
+  bottle do
+    root_url "https://github.com/dahlia/homebrew-deadsnakes/releases/download/2017-10-25"
+    sha256 "2002a00a417caff2548afe014463ed33c7f4b3e4e76eaf71c6ff1d5b758dda99" => :sierra
+  end
+
   option :universal
   option "with-tcl-tk", "Use Homebrew's Tk instead of OS X Tk (has optional Cocoa and threads support)"
   option "with-quicktest", "Run `make quicktest` after the build"
